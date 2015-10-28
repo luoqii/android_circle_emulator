@@ -6,7 +6,7 @@ test:
         parallel: true
     - circle-android wait-for-boot
   override:
-    - fb-adb shell input keyevent 82 &
+    - fb-adb shell input keyevent 82
         background: true
   
     - fb-adb shell monkey -p com.android.launcher -v 9999
