@@ -1,0 +1,12 @@
+#https://circleci.com/docs/android
+test:
+  pre:
+    - emulator -avd circleci-android22 -no-audio -no-window:
+        background: true
+        parallel: true
+    - circle-android wait-for-boot
+  override:
+    - adb shell input keyevent 82 &
+    - ./gradlew iD
+  
+    - adb shell monkey -p org.bangbang.song.android.commonlib.demo -v 9999
