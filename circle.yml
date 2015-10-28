@@ -7,6 +7,5 @@ test:
     - circle-android wait-for-boot
   override:
     - fb-adb shell input keyevent 82 &
-    - ./gradlew iD
   
-    - fg-adb shell monkey -p org.bangbang.song.android.commonlib.demo -v 9999
+    - fg-adb shell monkey -p com.android.launcher -v 9999
