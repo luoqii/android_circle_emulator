@@ -8,4 +8,4 @@ test:
   override:
     - fb-adb shell input keyevent 82 &
   
-    - fg-adb shell monkey -p com.android.launcher -v 9999
+    - fb-adb shell monkey -p com.android.launcher -v 9999
