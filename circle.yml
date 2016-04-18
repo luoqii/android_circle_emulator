@@ -10,4 +10,4 @@ test:
 # how 2 user background
 #        background: true
   
-    - fb-adb shell monkey -p com.android.launcher -v 77 --throttle 200
+    - fb-adb shell monkey -p com.android.launcher -v 777 --throttle 500
